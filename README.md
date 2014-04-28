@@ -8,9 +8,9 @@ The main results:
 + [hand rank distribution per preflop hand](http://oscar6echo.github.io/Poker2/viz/one_preflop_hand/index.html)
 + [preflop hand pair equity distribution](http://oscar6echo.github.io/Poker2/viz/two_preflop_hand/index.html)
 + [preflop hand equity distribution per number of opponents](http://oscar6echo.github.io/Poker2/viz/one_preflop_hand_montecarlo/index.html)
-are also available as [d3.js](www.d3js.org) visualisations.
+are also available as [d3.js](http://d3js.org) visualisations.
 
-An [odd calculator](http://oscar6echo.github.io/Poker2/viz/game/index.html) (also [d3.js](www.d3js.org) based) is also available:
+An [odd calculator](http://oscar6echo.github.io/Poker2/viz/game/index.html) (also [d3.js](http://d3js.org) based) is also available:
 + exhaustive search if all player's cards are known.
 + montecarlo if only one player's cards are known.
 
