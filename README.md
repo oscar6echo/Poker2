@@ -1,7 +1,8 @@
 ## Texas Hold'em Poker Hand Evaluator ##
 
 This is an exploration of the Texas Hold'em Poker game, in python and javascript.
-An IP notebook present the algorithm, originally from [SpecialK](http://specialk-coding.blogspot.fr/2010/04/texas-holdem-7-card-evaluator_23.html) and the main results.
+An IPython notebook presents the algorithm, originally from [SpecialK](http://specialk-coding.blogspot.fr/2010/04/texas-holdem-7-card-evaluator_23.html) and the main results.
+[Here](http://oscar6echo.github.io/Poker2/viz/nbviewer/Poker.html) it is in its html form.
 The tables are available in csv format.
 Contains fast (jit numba accelerated) Python script to create the tables.
 The main results:
