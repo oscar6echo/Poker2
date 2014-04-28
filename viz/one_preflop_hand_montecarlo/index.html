@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>One Preflop Hand Equity - MonteCarlo</title>
+	<link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="title"></div>
+		<div id="svg1"></div>
+		<div id="slider1">
+			<table>
+				<tr>
+					<td>Max Fraction of Player Bet</td>
+					<td id="outputslidery1max"></td>
+					<td><input id="slidery1max" type="range" min="0.10" max="3.20" step="0.01" value="1.0" onchange="onchange_y_1_max(this);"/></td>
+				</tr>
+			</table>
+		</div>
+		<div id="svg2"></div>
+		<div id="svg3"></div>
+		<div id="svg4"></div>
+	</div>
+
+</body>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="./js/viz.js"></script>
+
+</html>

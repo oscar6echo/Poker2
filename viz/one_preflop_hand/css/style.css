@@ -1,0 +1,98 @@
+
+body {
+	font-family: Arial ;
+	text-align: center;
+	font-variant: normal;
+	font-size:12px;
+	letter-spacing: 0px;
+	text-decoration: none;
+}
+
+#container {
+	text-align: center;
+	background-color: #FFF;
+}
+#title {
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-anchor: middle;
+	padding-bottom: 0px;
+}
+
+svg {
+	font: 10px sans-serif;
+}
+
+.background{
+	fill: white;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: gray;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+.cell text, .typelow text, .typehigh text {
+	pointer-events: none;
+	font-size: 9px;
+}
+
+.typelow rect, .typehigh rect {
+	opacity: 0.8;
+}
+
+.cell rect:hover, .typelow rect:hover, .typehigh rect:hover {
+	stroke-width: 1px;
+	stroke: black;
+}
+
+.cell.active rect, .typelow.active rect, .typehigh.active rect {
+	stroke-width: 2px;
+	stroke: black;
+}
+
+.bar {
+	stroke: black;
+	stroke-width: 1;
+	opacity: 0.90;
+	shape-rendering: crispEdges;
+}
+
+.refbar {
+	stroke: black;
+	stroke-width: 1;
+	opacity: 0.35;
+	shape-rendering: crispEdges;
+}
+
+
+#sliderbinsize, #sliderhands {
+	width: 400px;
+}
+
+#outputsliderbinsize, #outputsliderhands {
+	width: 50px;
+	text-align: right;
+}
+
+table {
+	font: 10px sans-serif;
+	margin: auto;
+}
+
+.tooltip {
+	position: absolute;
+	width: 110px;
+	height: 49px;
+	pointer-events: none;
+	background: #fbf3f5;
+	border: 1px solid;
+	border-radius:3px;
+	box-shadow: 10px 10px 5px #888888;
+	font-size: 11px;
+}
+
+

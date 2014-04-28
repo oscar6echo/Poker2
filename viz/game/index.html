@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Exhaustive Equity Calculation</title>
+	<link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="title"></div>
+		<div id="svg1"></div>
+		<div id="svg2"></div>
+		<div id="svg3"></div>
+		<div id="svg4"></div>
+		<div id="svg5"></div>
+		<div id="svg6"></div>
+		<div id="svg7"></div>
+		<div id="sliders">
+			<table id="nbplayers">
+				<tr>
+					<td>Nb of Players</td>
+					<td id="outputsliderplayers"></td>
+					<td><input id="sliderplayers" type="range" min="2" max="10" step="1" value="10" list=ticks onchange="onchange_players(this);"/></td>
+					<datalist id=ticks>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+					</datalist>
+				</tr>
+			</table>
+			<table id="mode">
+				<tr >
+					<td><input type="radio" name="mode" value="exhaustive" onchange="exhaustive_mode()" Checked>Exhaustive</input></td>
+					<td><input type="radio" name="mode" value="montecarlo" onchange="montecarlo_mode()">Monte Carlo</input></td>
+				</tr>
+			</table>
+
+
+		</div>
+	</div>
+
+</body>
+
+<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+<script src="./js/d3.min.js"></script>
+<!-- <script src="http://d3js.org/queue.v1.min.js"></script> -->
+<script src="./js/queue.js"></script>
+<script src="./js/eval.js"></script>
+<script src="./js/MersenneTwister.js"></script>
+<script type="text/javascript" src="./js/viz.js"></script>
+
+</html>

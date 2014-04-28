@@ -1,0 +1,187 @@
+
+body {
+	font-family: sans-serif; ;
+	text-align: center;
+	font-variant: normal;
+	font-size: 11px;
+	letter-spacing: 0px;
+	text-decoration: none;
+}
+
+svg {
+	padding: 0px
+}
+
+.deckcard rect {
+	fill: none;
+	pointer-events: all;
+	stroke: gray;
+	stroke-width: 1px;
+}
+
+.deckcard rect:hover {
+	stroke: blue;
+	stroke-width: 2px;
+}
+
+
+.tablecard rect, .playercard rect {
+	fill: none;
+	pointer-events: all;
+	stroke: red;
+	stroke-width: 0px;
+}
+
+.tablecard rect:hover, .playercard rect:hover {
+	stroke: blue;
+	stroke-width: 2px;
+	shape-rendering: crispEdges;
+}
+
+.tablecard rect.active, .playercard rect.active {
+	stroke: yellow;
+	stroke-width: 3;
+	shape-rendering: crispEdges;
+}
+
+.shuffletable rect, .shuffleplayer rect, .shuffleplayerall rect, .mcbutton rect {
+	fill: lightgray;
+	opacity: 0.25;
+	stroke: black;
+	stroke-width: 1px;
+}
+
+
+.shuffletable text, .shuffleplayer text, .shuffleplayerall text, .mcbutton text {
+	font-size: 10px;
+	pointer-events: none;
+}
+
+.playermc {
+	fill: none;
+	stroke: red;
+	stroke-width: 2;
+	shape-rendering: crispEdges;
+}
+
+.handtype {
+	font-size: 10px;
+	fill: #2171b5;
+	pointer-events: none;
+}
+
+.handrank {
+	font-size: 10px;
+	fill: black;
+	pointer-events: none;
+}
+
+.label {
+	font-size: 10px;
+	pointer-events: none;
+
+}
+
+.win {
+	stroke: black;
+	stroke-width: 1;
+	opacity: 0.8;
+	shape-rendering: crispEdges;
+	fill: #756bb1;
+}
+
+.tie {
+	stroke: black;
+	stroke-width: 1;
+	opacity: 0.8;
+	shape-rendering: crispEdges;
+	fill: #bcbddc;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+
+
+.axis path, .axis line {
+	fill: none;
+	stroke: gray;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+table {
+	margin: auto;
+}
+
+#mode td {
+	width: 130px;
+}
+
+#sliderplayers {
+	width: 200px;
+}
+
+#outputsliderplayers {
+	width: 30px;
+	text-align: center;
+}
+
+#outputsliderplayers text {
+	font-size: 11px;
+}
+
+.cell.active {
+	fill: yellow;
+}
+
+.row text, .column text {
+	font: 8px sans-serif;
+}
+
+.row text.active, .column text.active{
+	fill: red;
+	font-size: 11px;
+}
+
+.bar {
+	stroke: black;
+	stroke-width: 1;
+	opacity: 0.8;
+	shape-rendering: crispEdges;
+}
+
+.circle {
+	fill: #F35E4C;
+	stroke: black;
+	opacity: 1.0;
+}
+
+.tooltip {
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	pointer-events: none;
+	background: #fbf3f5;
+	border: 1px solid;
+	border-radius:3px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+
+#title {
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-anchor: middle;
+	padding-bottom: 0px;
+}
+
+#container {
+	text-align: center;
+	background-color: #FFF;
+}
+
+
+

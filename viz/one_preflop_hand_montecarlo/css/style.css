@@ -1,0 +1,105 @@
+
+body {
+	font-family: Arial ;
+	text-align: center;
+	font-variant: normal;
+	font-size:12px;
+	letter-spacing: 0px;
+	text-decoration: none;
+}
+
+#container {
+	text-align: center;
+	background-color: #FFF;
+}
+#title {
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-anchor: middle;
+	padding-bottom: 0px;
+}
+
+svg {
+	font: 10px sans-serif;
+}
+
+.background{
+	fill: white;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: gray;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+.cell text {
+	pointer-events: none;
+	font-size: 9px;
+}
+
+.cell rect:hover {
+	stroke-width: 1px;
+	stroke: black;
+}
+
+.cell.active rect {
+	stroke-width: 2px;
+	stroke: black;
+}
+
+
+.line11, .line21, .line3 {
+	fill: none;
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.line12, .line22 {
+	fill: none;
+	stroke: #bdbdbd;
+	stroke-width: 1px;
+}
+
+.circle11, .circle21, .circle3 {
+	fill: #a6bddb;
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.circle12, .circle22 {
+	fill: #ece2f0;
+	stroke: black;
+	stroke-width: 1px;
+}
+
+
+#slidery1max {
+	width: 150px;
+}
+
+#outputslidery1max {
+	width: 50px;
+	text-align: right;
+}
+
+table {
+	font: 10px sans-serif;
+	margin: auto;
+}
+
+.tooltip {
+	position: absolute;
+	width: 45px;
+	height: 15px;
+	pointer-events: none;
+	background: #fbf3f5;
+	border: 1px solid;
+	border-radius:3px;
+	box-shadow: 10px 10px 5px #888888;
+	font-size: 11px;
+}
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Two Preflop Hand Equity</title>
+	<link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="title"></div>
+		<div id="svg1"></div>
+		<div id="sliders">
+			<table>
+				<tr>
+					<td>Hand Rank Bin Size</td>
+					<td id="outputsliderbinsize"></td>
+					<td><input id="sliderbinsize" type="range" min="1" max="150" step="1" value="100" onchange="onchange_binsize(this);"/></td>
+				</tr>
+				<tr>
+					<td>Max Number of Hands</td>
+					<td id="outputsliderhands"></td>
+					<td><input id="sliderhands" type="range" min="100" max="700000" step="100" value="150000" onchange="onchange_hands(this);"/></td>
+				</tr>
+			</table>
+		</div>
+		<div id="svg2"></div>
+		<div id="svg3"></div>
+	</div>
+
+</body>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="./js/viz.js"></script>
+
+</html>
