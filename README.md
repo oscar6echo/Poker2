@@ -5,12 +5,12 @@ An IP notebook present the algorithm, originally from [SpecialK](http://specialk
 The tables are available in csv format.
 Contains fast (jit numba accelerated) Python script to create the tables.
 The main results:
-+ hand rank distribution per preflop hand
-+ pot equity for all pair of preflop hands
-+ montecarlo equity tables per preflop hand and number of opponents
++ [hand rank distribution per preflop hand](http://oscar6echo.github.io/Poker2/viz/one_preflop_hand/index.html)
++ [preflop hand pair equity distribution](http://oscar6echo.github.io/Poker2/viz/two_preflop_hand/index.html)
++ [preflop hand equity distribution per number of opponents](http://oscar6echo.github.io/Poker2/viz/one_preflop_hand_montecarlo/index.html)
 are also available as [d3.js](d3js.org) visualisations.
 
-A game simulator (also [d3.js](d3js.org) based) is also available:
+An [odd calculator](http://oscar6echo.github.io/Poker2/viz/game/index.html) (also [d3.js](d3js.org) based) is also available:
 + exhaustive search if all player's cards are known.
 + montecarlo if only one player's cards are known.
 

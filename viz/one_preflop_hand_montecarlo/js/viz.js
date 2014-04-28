@@ -16,15 +16,15 @@ var R ,
 
 
 var margin_1 = {top: 40, right: 25, bottom: 30, left: 25},
-	width_1 = 400,
+	width_1 = 600,
 	height_1 = 150;
 
 var margin_2 = {top: 15, right: 25, bottom: 30, left: 25},
-	width_2 = 400,
+	width_2 = 600,
 	height_2 = 150;
 
 var margin_3 = {top: 15, right: 25, bottom: 30, left: 25},
-	width_3 = 400,
+	width_3 = 600,
 	height_3 = 150;
 
 var margin_4 = {top: 10, right: 25, bottom: 30, left: 25},
