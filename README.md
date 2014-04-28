@@ -9,7 +9,7 @@ The main results are also available as [d3.js](http://d3js.org) visualisations :
 + [preflop hand pair equity distribution](http://oscar6echo.github.io/Poker2/viz/two_preflop_hand/index.html)
 + [preflop hand equity distribution per number of opponents](http://oscar6echo.github.io/Poker2/viz/one_preflop_hand_montecarlo/index.html)  
 
-An [odd calculator](http://oscar6echo.github.io/Poker2/viz/game/index.html) (also [d3.js](http://d3js.org) based) is also available:
-+ exhaustive search if all player's cards are known.
-+ montecarlo if only one player's cards are known.
+And an [odd calculator](http://oscar6echo.github.io/Poker2/viz/game/index.html) (also [d3.js](http://d3js.org) based) :
++ running exhaustively if all player's cards are known.
++ running montecarlo simulations if only one player's cards are known (and some other players's cards may be gueesed).
 
