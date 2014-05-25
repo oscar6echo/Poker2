@@ -1629,14 +1629,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -1869,24 +1869,24 @@ NB_SUIT = 4
 DECK_SIZE = 52
 SUIT_MASK = 511
 SUIT_BIT_SHIFT = 9
-SUIT_KEY = 
+SUIT_KEY =
 [ 0  1 29 37]
-FLUSH_KEY_FIVE = 
+FLUSH_KEY_FIVE =
 [   0    1    2    4    8   16   32   56  104  192  352  672 1288]
-FACE_KEY_FIVE = 
+FACE_KEY_FIVE =
 [    0     1     5    22    94   312   992  2422  5624 12522 19998 43258 79415]
-FLUSH_KEY_SEVEN = 
+FLUSH_KEY_SEVEN =
 [   1    2    4    8   16   32   64  128  240  464  896 1728 3328]
-FACE_KEY_SEVEN = 
+FACE_KEY_SEVEN =
 [      0       1       5      22      98     453    2031    8698   22854   83661  262349  636345 1479181]
-CARD_SUIT = 
+CARD_SUIT =
 [0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3]
-CARD_FACE = 
+CARD_FACE =
 [ 0  0  0  0  1  1  1  1  2  2  2  2  3  3  3  3  4  4  4  4  5  5  5  5  6  6  6  6  7  7  7  7  8  8  8  8  9  9  9  9 10 10 10 10 11 11 11 11 12 12 12 12]
-CARD_FLUSH_KEY = 
+CARD_FLUSH_KEY =
 [   1    1    1    1    2    2    2    2    4    4    4    4    8    8    8    8   16   16   16   16   32   32   32   32   64   64   64   64  128  128  128  128  240  240  240  240  464  464  464  464  896  896  896  896 1728 1728 1728 1728 3328 3328
  3328 3328]
-CARD_FACE_KEY = 
+CARD_FACE_KEY =
 [        0         1        29        37       512       513       541       549      2560      2561      2589      2597     11264     11265     11293     11301     50176     50177     50205     50213    231936    231937    231965    231973   1039872
    1039873   1039901   1039909   4453376   4453377   4453405   4453413  11701248  11701249  11701277  11701285  42834432  42834433  42834461  42834469 134322688 134322689 134322717 134322725 325808640 325808641 325808669 325808677 757340672 757340673
  757340701 757340709]
@@ -1949,11 +1949,11 @@ compute_tables time =   0.0817 s
 
 --------------- start EvalFive.test
 -------- EvalFive tables
-flush_rank = 
+flush_rank =
 [  15   23   27   29   30 ..., 2512 2520 2536 2560 2608]
 [7453 5863 5864 5865 5866 ..., 7136 7137 7138 7139 7461]
 nb of nonzero elements = 1287
-face_rank = 
+face_rank =
 [     1      2      3      4      5 ..., 323284 324761 330182 337658 360918]
 [7296 7140 7152 7308 7297 ..., 7448 7295 7449 7450 7451]
 nb of nonzero elements = 1287
@@ -2034,15 +2034,15 @@ compute_tables time =   0.6966 s
 
 --------------- start EvalSeven.test
 -------- EvalSeven tables
-flush_rank = 
+flush_rank =
 [  31   47   55   59   61 ..., 6788 6792 6800 6816 6848]
 [7453 5863 5864 5865 5866 ..., 7461 7461 7461 7461 7461]
 nb of nonzero elements = 4719
-face_rank = 
+face_rank =
 [      3       4       7       8       9 ..., 7198112 7212268 7273075 7451763 7825759]
 [7296 7308 7297 7152 7309 ..., 7451 7451 7451 7451 7451]
 nb of nonzero elements = 49205
-flush_suit = 
+flush_suit =
 [ 0  0  0 -1 -1 ..., -2 -2 -2 -2  3]
 nb of elements different from -2 = 120
 -------- EvalSeven getSevenRank_ evaluators sample runs
@@ -2133,383 +2133,383 @@ In&nbsp;[6]:
 <table style="border:0px solid black;">
 
     <tr style="border:0px solid black;">
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/1.png" alt="N/A">
+            <img border="10" src="Cards/Full/1.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/5.png" alt="N/A">
+            <img border="10" src="Cards/Full/5.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/9.png" alt="N/A">
+            <img border="10" src="Cards/Full/9.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/13.png" alt="N/A">
+            <img border="10" src="Cards/Full/13.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/17.png" alt="N/A">
+            <img border="10" src="Cards/Full/17.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/21.png" alt="N/A">
+            <img border="10" src="Cards/Full/21.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/25.png" alt="N/A">
+            <img border="10" src="Cards/Full/25.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/29.png" alt="N/A">
+            <img border="10" src="Cards/Full/29.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/33.png" alt="N/A">
+            <img border="10" src="Cards/Full/33.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/37.png" alt="N/A">
+            <img border="10" src="Cards/Full/37.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/41.png" alt="N/A">
+            <img border="10" src="Cards/Full/41.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/45.png" alt="N/A">
+            <img border="10" src="Cards/Full/45.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/49.png" alt="N/A">
+            <img border="10" src="Cards/Full/49.png" alt="N/A">
         </td>
-    
+
     </tr>
 
     <tr style="border:0px solid black;">
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/2.png" alt="N/A">
+            <img border="10" src="Cards/Full/2.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/6.png" alt="N/A">
+            <img border="10" src="Cards/Full/6.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/10.png" alt="N/A">
+            <img border="10" src="Cards/Full/10.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/14.png" alt="N/A">
+            <img border="10" src="Cards/Full/14.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/18.png" alt="N/A">
+            <img border="10" src="Cards/Full/18.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/22.png" alt="N/A">
+            <img border="10" src="Cards/Full/22.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/26.png" alt="N/A">
+            <img border="10" src="Cards/Full/26.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/30.png" alt="N/A">
+            <img border="10" src="Cards/Full/30.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/34.png" alt="N/A">
+            <img border="10" src="Cards/Full/34.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/38.png" alt="N/A">
+            <img border="10" src="Cards/Full/38.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/42.png" alt="N/A">
+            <img border="10" src="Cards/Full/42.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/46.png" alt="N/A">
+            <img border="10" src="Cards/Full/46.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/50.png" alt="N/A">
+            <img border="10" src="Cards/Full/50.png" alt="N/A">
         </td>
-    
+
     </tr>
 
     <tr style="border:0px solid black;">
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/3.png" alt="N/A">
+            <img border="10" src="Cards/Full/3.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/7.png" alt="N/A">
+            <img border="10" src="Cards/Full/7.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/11.png" alt="N/A">
+            <img border="10" src="Cards/Full/11.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/15.png" alt="N/A">
+            <img border="10" src="Cards/Full/15.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/19.png" alt="N/A">
+            <img border="10" src="Cards/Full/19.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/23.png" alt="N/A">
+            <img border="10" src="Cards/Full/23.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/27.png" alt="N/A">
+            <img border="10" src="Cards/Full/27.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/31.png" alt="N/A">
+            <img border="10" src="Cards/Full/31.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/35.png" alt="N/A">
+            <img border="10" src="Cards/Full/35.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/39.png" alt="N/A">
+            <img border="10" src="Cards/Full/39.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/43.png" alt="N/A">
+            <img border="10" src="Cards/Full/43.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/47.png" alt="N/A">
+            <img border="10" src="Cards/Full/47.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/51.png" alt="N/A">
+            <img border="10" src="Cards/Full/51.png" alt="N/A">
         </td>
-    
+
     </tr>
 
     <tr style="border:0px solid black;">
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/4.png" alt="N/A">
+            <img border="10" src="Cards/Full/4.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/8.png" alt="N/A">
+            <img border="10" src="Cards/Full/8.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/12.png" alt="N/A">
+            <img border="10" src="Cards/Full/12.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/16.png" alt="N/A">
+            <img border="10" src="Cards/Full/16.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/20.png" alt="N/A">
+            <img border="10" src="Cards/Full/20.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/24.png" alt="N/A">
+            <img border="10" src="Cards/Full/24.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/28.png" alt="N/A">
+            <img border="10" src="Cards/Full/28.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/32.png" alt="N/A">
+            <img border="10" src="Cards/Full/32.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/36.png" alt="N/A">
+            <img border="10" src="Cards/Full/36.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/40.png" alt="N/A">
+            <img border="10" src="Cards/Full/40.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/44.png" alt="N/A">
+            <img border="10" src="Cards/Full/44.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/48.png" alt="N/A">
+            <img border="10" src="Cards/Full/48.png" alt="N/A">
         </td>
-    
+
         <td style="background-color:white;
                     border-collapse:collapse;
                     text-align:center;
                     border:0px solid black;">
-            <img border="10" src="files/Cards/Full/52.png" alt="N/A">
+            <img border="10" src="Cards/Full/52.png" alt="N/A">
         </td>
-    
+
     </tr>
 
  </table>
@@ -2771,7 +2771,7 @@ In&nbsp;[9]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-Straight Flush : 
+Straight Flush :
 
 </pre>
 </div>
@@ -2790,7 +2790,7 @@ $$\binom{4}{1} \binom{10}{1}-\binom{4}{1}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Four of a Kind : 
+Four of a Kind :
 
 </pre>
 </div>
@@ -2809,7 +2809,7 @@ $$\binom{4}{1} \binom{12}{1} \binom{13}{1}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Full House : 
+Full House :
 
 </pre>
 </div>
@@ -2828,7 +2828,7 @@ $$\binom{4}{2} \binom{4}{3} \binom{12}{1} \binom{13}{1}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Flush : 
+Flush :
 
 </pre>
 </div>
@@ -2847,7 +2847,7 @@ $$\binom{4}{1} \binom{13}{5}-\binom{4}{1} \binom{10}{1}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Straight : 
+Straight :
 
 </pre>
 </div>
@@ -2866,7 +2866,7 @@ $$\binom{4}{1}^5 \binom{10}{1}-\binom{4}{1} \binom{10}{1}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Three of a Kind : 
+Three of a Kind :
 
 </pre>
 </div>
@@ -2885,7 +2885,7 @@ $$\binom{4}{1}^2 \binom{4}{3} \binom{12}{2} \binom{13}{1}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Two Pairs : 
+Two Pairs :
 
 </pre>
 </div>
@@ -2904,7 +2904,7 @@ $$\binom{4}{1} \binom{4}{2}^2 \binom{11}{1} \binom{13}{2}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-One Pair : 
+One Pair :
 
 </pre>
 </div>
@@ -2923,7 +2923,7 @@ $$\binom{4}{1}^3 \binom{4}{2} \binom{12}{3} \binom{13}{1}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-High Card : 
+High Card :
 
 </pre>
 </div>
@@ -2942,7 +2942,7 @@ $$\left(\binom{4}{1}^5-4\right) (\binom{13}{5}-10)$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-All : 
+All :
 
 </pre>
 </div>
@@ -3253,7 +3253,7 @@ In&nbsp;[12]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-Straight Flush : 
+Straight Flush :
 
 </pre>
 </div>
@@ -3272,7 +3272,7 @@ $$4 \binom{47}{2} + 36 \binom{46}{2}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Four of a Kind : 
+Four of a Kind :
 
 </pre>
 </div>
@@ -3291,7 +3291,7 @@ $$\binom{13}{1} \binom{48}{3}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Full House - 1 Triple, 1 Pair, 2 Kickers : 
+Full House - 1 Triple, 1 Pair, 2 Kickers :
 
 </pre>
 </div>
@@ -3310,7 +3310,7 @@ $$\binom{4}{1}^2 \binom{4}{2} \binom{4}{3} \binom{11}{2} \binom{12}{1} \binom{13
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Full House - 1 Triple, 2 Pairs : 
+Full House - 1 Triple, 2 Pairs :
 
 </pre>
 </div>
@@ -3329,7 +3329,7 @@ $$\binom{4}{2}^2 \binom{4}{3} \binom{12}{2} \binom{13}{1}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Full House - 2 Triples, 1 Kicker : 
+Full House - 2 Triples, 1 Kicker :
 
 </pre>
 </div>
@@ -3348,7 +3348,7 @@ $$\binom{4}{1} \binom{4}{3}^2 \binom{11}{1} \binom{13}{2}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Flush - 7 cards same suit : 
+Flush - 7 cards same suit :
 
 </pre>
 </div>
@@ -3367,7 +3367,7 @@ $$\binom{4}{1} \binom{13}{7}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Flush - 6 cards same suit : 
+Flush - 6 cards same suit :
 
 </pre>
 </div>
@@ -3386,7 +3386,7 @@ $$\binom{4}{1} \binom{13}{6} \binom{39}{1}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Flush - 5 cards same suit : 
+Flush - 5 cards same suit :
 
 </pre>
 </div>
@@ -3405,7 +3405,7 @@ $$\binom{4}{1} \binom{13}{5} \binom{39}{2}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Straight - 7 distinct faces : 
+Straight - 7 distinct faces :
 
 </pre>
 </div>
@@ -3424,7 +3424,7 @@ $$\left(\binom{4}{1}^7-\binom{4}{1} \left(\binom{7}{5} \binom{3}{1}^2+\binom{7}{
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Straight - 6 distinct faces : 
+Straight - 6 distinct faces :
 
 </pre>
 </div>
@@ -3443,7 +3443,7 @@ $$\binom{4}{2} \left(\binom{4}{1}^5-\binom{4}{1}-\binom{2}{1} \binom{3}{1} \bino
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Straight - 5 distinct faces, 1 Triple : 
+Straight - 5 distinct faces, 1 Triple :
 
 </pre>
 </div>
@@ -3462,7 +3462,7 @@ $$\left(\binom{4}{1}^4-\binom{3}{1}\right) \binom{4}{3} \binom{5}{1} \binom{10}{
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Straight - 5 distinct faces, 2 Triples : 
+Straight - 5 distinct faces, 2 Triples :
 
 </pre>
 </div>
@@ -3481,7 +3481,7 @@ $$\left(\binom{4}{2} \binom{4}{1}^3+\left(\binom{4}{1}^3-2\right) \binom{4}{2}+\
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Three of a Kind : 
+Three of a Kind :
 
 </pre>
 </div>
@@ -3500,7 +3500,7 @@ $$\left(\binom{4}{1}^4-\binom{3}{1}\right) \binom{4}{3} \binom{5}{1} (\binom{13}
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Two Pairs - 2 Pairs, 3 Kickers : 
+Two Pairs - 2 Pairs, 3 Kickers :
 
 </pre>
 </div>
@@ -3519,7 +3519,7 @@ $$\left(\binom{4}{2} \binom{4}{1}^3+\left(\binom{4}{1}^3-2\right) \binom{4}{2}+\
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-Two Pairs - 3 Pairs, 1 Kicker : 
+Two Pairs - 3 Pairs, 1 Kicker :
 
 </pre>
 </div>
@@ -3538,7 +3538,7 @@ $$\binom{4}{1}^2 \binom{4}{2}^3 \binom{13}{4}$$
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-One Pair : 
+One Pair :
 
 </pre>
 </div>
@@ -3557,7 +3557,7 @@ $$\binom{4}{2} \left(\binom{4}{1}^5-2 \binom{3}{1} \binom{5}{4}-4\right) \binom{
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-High Card : 
+High Card :
 
 </pre>
 </div>
@@ -3576,7 +3576,7 @@ $$\left(\binom{4}{1}^7-\binom{4}{1} \left(\binom{7}{5} \binom{3}{1}^2+\binom{7}{
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 
-All : 
+All :
 
 </pre>
 </div>
@@ -3678,7 +3678,7 @@ nb of preflop hands = 169
 <table>
 
     <tr>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -3686,7 +3686,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     AAo</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3694,7 +3694,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     KAs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3702,7 +3702,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     QAs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3710,7 +3710,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     JAs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3718,7 +3718,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     TAs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3726,7 +3726,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     9As</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3734,7 +3734,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     8As</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3742,7 +3742,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     7As</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3750,7 +3750,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     6As</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3758,7 +3758,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     5As</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3766,7 +3766,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     4As</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3774,7 +3774,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     3As</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3782,11 +3782,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     2As</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -3794,7 +3794,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     AKo</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -3802,7 +3802,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     KKo</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3810,7 +3810,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     QKs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3818,7 +3818,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     JKs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3826,7 +3826,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     TKs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3834,7 +3834,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     9Ks</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3842,7 +3842,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     8Ks</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3850,7 +3850,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     7Ks</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3858,7 +3858,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     6Ks</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3866,7 +3866,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     5Ks</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3874,7 +3874,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     4Ks</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3882,7 +3882,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     3Ks</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3890,11 +3890,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     2Ks</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -3902,7 +3902,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     AQo</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -3910,7 +3910,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     KQo</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -3918,7 +3918,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     QQo</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3926,7 +3926,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     JQs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3934,7 +3934,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     TQs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3942,7 +3942,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     9Qs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3950,7 +3950,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     8Qs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3958,7 +3958,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     7Qs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3966,7 +3966,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     6Qs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3974,7 +3974,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     5Qs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3982,7 +3982,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     4Qs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3990,7 +3990,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     3Qs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -3998,11 +3998,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     2Qs</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4010,7 +4010,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     AJo</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4018,7 +4018,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     KJo</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4026,7 +4026,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     QJo</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -4034,7 +4034,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     JJo</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4042,7 +4042,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     TJs</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4050,7 +4050,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     9Js</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4058,7 +4058,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     8Js</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4066,7 +4066,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     7Js</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4074,7 +4074,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     6Js</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4082,7 +4082,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     5Js</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4090,7 +4090,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     4Js</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4098,7 +4098,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     3Js</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4106,11 +4106,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     2Js</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4118,7 +4118,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     ATo</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4126,7 +4126,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     KTo</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4134,7 +4134,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     QTo</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4142,7 +4142,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     JTo</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -4150,7 +4150,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     TTo</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4158,7 +4158,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     9Ts</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4166,7 +4166,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     8Ts</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4174,7 +4174,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     7Ts</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4182,7 +4182,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     6Ts</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4190,7 +4190,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     5Ts</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4198,7 +4198,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     4Ts</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4206,7 +4206,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     3Ts</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4214,11 +4214,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     2Ts</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4226,7 +4226,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     A9o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4234,7 +4234,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     K9o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4242,7 +4242,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     Q9o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4250,7 +4250,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     J9o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4258,7 +4258,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     T9o</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -4266,7 +4266,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     99o</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4274,7 +4274,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     89s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4282,7 +4282,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     79s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4290,7 +4290,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     69s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4298,7 +4298,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     59s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4306,7 +4306,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     49s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4314,7 +4314,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     39s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4322,11 +4322,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     29s</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4334,7 +4334,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     A8o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4342,7 +4342,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     K8o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4350,7 +4350,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     Q8o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4358,7 +4358,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     J8o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4366,7 +4366,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     T8o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4374,7 +4374,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     98o</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -4382,7 +4382,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     88o</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4390,7 +4390,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     78s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4398,7 +4398,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     68s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4406,7 +4406,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     58s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4414,7 +4414,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     48s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4422,7 +4422,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     38s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4430,11 +4430,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     28s</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4442,7 +4442,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     A7o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4450,7 +4450,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     K7o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4458,7 +4458,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     Q7o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4466,7 +4466,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     J7o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4474,7 +4474,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     T7o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4482,7 +4482,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     97o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4490,7 +4490,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     87o</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -4498,7 +4498,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     77o</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4506,7 +4506,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     67s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4514,7 +4514,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     57s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4522,7 +4522,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     47s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4530,7 +4530,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     37s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4538,11 +4538,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     27s</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4550,7 +4550,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     A6o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4558,7 +4558,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     K6o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4566,7 +4566,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     Q6o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4574,7 +4574,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     J6o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4582,7 +4582,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     T6o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4590,7 +4590,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     96o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4598,7 +4598,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     86o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4606,7 +4606,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     76o</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -4614,7 +4614,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     66o</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4622,7 +4622,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     56s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4630,7 +4630,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     46s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4638,7 +4638,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     36s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4646,11 +4646,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     26s</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4658,7 +4658,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     A5o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4666,7 +4666,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     K5o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4674,7 +4674,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     Q5o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4682,7 +4682,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     J5o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4690,7 +4690,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     T5o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4698,7 +4698,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     95o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4706,7 +4706,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     85o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4714,7 +4714,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     75o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4722,7 +4722,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     65o</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -4730,7 +4730,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     55o</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4738,7 +4738,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     45s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4746,7 +4746,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     35s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4754,11 +4754,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     25s</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4766,7 +4766,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     A4o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4774,7 +4774,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     K4o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4782,7 +4782,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     Q4o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4790,7 +4790,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     J4o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4798,7 +4798,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     T4o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4806,7 +4806,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     94o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4814,7 +4814,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     84o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4822,7 +4822,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     74o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4830,7 +4830,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     64o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4838,7 +4838,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     54o</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -4846,7 +4846,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     44o</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4854,7 +4854,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     34s</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4862,11 +4862,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     24s</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4874,7 +4874,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     A3o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4882,7 +4882,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     K3o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4890,7 +4890,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     Q3o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4898,7 +4898,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     J3o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4906,7 +4906,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     T3o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4914,7 +4914,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     93o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4922,7 +4922,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     83o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4930,7 +4930,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     73o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4938,7 +4938,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     63o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4946,7 +4946,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     53o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4954,7 +4954,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     43o</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -4962,7 +4962,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     33o</td>
-    
+
         <td style="background-color:#ffffb3;
                     color:black;
                     border-collapse:collapse;
@@ -4970,11 +4970,11 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     23s</td>
-    
+
     </tr>
 
     <tr>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4982,7 +4982,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     A2o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4990,7 +4990,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     K2o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -4998,7 +4998,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     Q2o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -5006,7 +5006,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     J2o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -5014,7 +5014,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     T2o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -5022,7 +5022,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     92o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -5030,7 +5030,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     82o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -5038,7 +5038,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     72o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -5046,7 +5046,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     62o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -5054,7 +5054,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     52o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -5062,7 +5062,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     42o</td>
-    
+
         <td style="background-color:#8dd3c7;
                     color:black;
                     border-collapse:collapse;
@@ -5070,7 +5070,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     32o</td>
-    
+
         <td style="background-color:#bebada;
                     color:black;
                     border-collapse:collapse;
@@ -5078,7 +5078,7 @@ nb of preflop hands = 169
                     font-family:Arial;
                     border:1px solid black;">
                     22o</td>
-    
+
     </tr>
 
  </table>
@@ -5122,7 +5122,7 @@ In&nbsp;[14]:
 <pre>
 
 --------------- start create_df_preflop_hand_distrib
-all preflop hands = 
+all preflop hands =
 start = [&apos;AAo&apos;, &apos;AKs&apos;, &apos;AQs&apos;, &apos;AJs&apos;, &apos;ATs&apos;, &apos;A9s&apos;, &apos;A8s&apos;, &apos;A7s&apos;, &apos;A6s&apos;, &apos;A5s&apos;]
 end = [&apos;2Jo&apos;, &apos;2To&apos;, &apos;29o&apos;, &apos;28o&apos;, &apos;27o&apos;, &apos;26o&apos;, &apos;25o&apos;, &apos;24o&apos;, &apos;23o&apos;, &apos;22o&apos;]
 nb of elements = 169
@@ -6957,17 +6957,17 @@ In&nbsp;[56]:
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <div class="wrapper" style="height: 850px; overflow: hidden; padding: 0; text-align: center; width: 850px;">
-<iframe scrolling="no" src="http://oscar6echo.github.io/Poker2/viz/one_preflop_hand/" 
+<iframe scrolling="no" src="http://oscar6echo.github.io/Poker2/viz/one_preflop_hand/"
 style="-moz-transform-origin: 0 0;
 -moz-transform: scale(1.0);
 -o-transform-origin: 0 0;
 -o-transform: scale(1.0);
 -webkit-transform-origin: 0 0;
 -webkit-transform: scale(1.0);
-border: 0px black solid; 
-height: 850px; 
+border: 0px black solid;
+height: 850px;
 overflow: hidden;
-width: 850px; 
+width: 850px;
 zoom: 1.0;">
 </iframe>
 </div>'
@@ -7115,177 +7115,177 @@ In&nbsp;[19]:
 <table style="border:0px;">
 <tr style="border:0px; border-bottom:1px solid #999;">
     <td style="border-width:0px; border-right:1px solid #999;"></td>
-    
+
         <td style="border:0px; text-align:center;">1</td>
-    
+
         <td style="border:0px; text-align:center;">2</td>
-    
+
         <td style="border:0px; text-align:center;">3</td>
-    
+
         <td style="border:0px; text-align:center;">4</td>
-    
+
         <td style="border:0px; text-align:center;">5</td>
-    
+
         <td style="border:0px; text-align:center;">6</td>
-    
+
         <td style="border:0px; text-align:center;">7</td>
-    
+
 </tr>
 
-    
+
     <tr style="border:0px;">
         <td style="border:0px; border-right:1px solid #999; width:260px; font-size:90%;">suited - suited</td>
-       
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:red; font-size:125%">&#x2665</span><span style="color:red; font-size:125%">&#x2665</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             4x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
    </tr>
 
-    
+
     <tr style="border:0px;">
         <td style="border:0px; border-right:1px solid #999; width:260px; font-size:90%;">suited - offsuited (no pair)</td>
-       
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:red; font-size:125%">&#x2665</span><span style="color:red; font-size:125%">&#x2666</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:red; font-size:125%">&#x2665</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>]
             </td>
-    
+
    </tr>
 
-    
+
     <tr style="border:0px;">
         <td style="border:0px; border-right:1px solid #999; width:260px; font-size:90%;">suited - offsuited (pair)</td>
-       
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:red; font-size:125%">&#x2665</span><span style="color:red; font-size:125%">&#x2666</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:red; font-size:125%">&#x2665</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
    </tr>
 
-    
+
     <tr style="border:0px;">
         <td style="border:0px; border-right:1px solid #999; width:260px; font-size:90%;">offsuited (no pair) - suited</td>
-       
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:red; font-size:125%">&#x2665</span><span style="color:red; font-size:125%">&#x2666</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:red; font-size:125%">&#x2665</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
    </tr>
 
-    
+
     <tr style="border:0px;">
         <td style="border:0px; border-right:1px solid #999; width:260px; font-size:90%;">offsuited (pair) - suited</td>
-       
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:red; font-size:125%">&#x2665</span><span style="color:red; font-size:125%">&#x2666</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:red; font-size:125%">&#x2665</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
    </tr>
 
-    
+
     <tr style="border:0px;">
         <td style="border:0px; border-right:1px solid #999; width:260px; font-size:90%;">offsuited (no pair) - offsuited (no pair)</td>
-       
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:red; font-size:125%">&#x2666</span><span style="color:back; font-size:125%">&#x2663</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:red; font-size:125%">&#x2666</span><span style="color:red; font-size:125%">&#x2665</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:red; font-size:125%">&#x2666</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:red; font-size:125%">&#x2665</span><span style="color:red; font-size:125%">&#x2666</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:red; font-size:125%">&#x2665</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2666</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>]
             </td>
-    
+
    </tr>
 
-    
+
     <tr style="border:0px;">
         <td style="border:0px; border-right:1px solid #999; width:260px; font-size:90%;">offsuited (no pair) - offsuited (pair)</td>
-       
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:red; font-size:125%">&#x2666</span><span style="color:back; font-size:125%">&#x2663</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:red; font-size:125%">&#x2666</span><span style="color:red; font-size:125%">&#x2665</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:red; font-size:125%">&#x2666</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:red; font-size:125%">&#x2665</span><span style="color:back; font-size:125%">&#x2660</span>]
             </td>
-    
+
    </tr>
 
-    
+
     <tr style="border:0px;">
         <td style="border:0px; border-right:1px solid #999; width:260px; font-size:90%;">offsuited (pair) - offsuited (pair)</td>
-       
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:red; font-size:125%">&#x2666</span><span style="color:back; font-size:125%">&#x2663</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:red; font-size:125%">&#x2666</span><span style="color:red; font-size:125%">&#x2665</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             24x[<span style="color:red; font-size:125%">&#x2666</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>]
             </td>
-    
+
             <td style="border:0px; width:60px;  text-align:center; font-size:90%">
             12x[<span style="color:red; font-size:125%">&#x2665</span><span style="color:back; font-size:125%">&#x2660</span>-<span style="color:back; font-size:125%">&#x2660</span><span style="color:red; font-size:125%">&#x2665</span>]
             </td>
-    
+
    </tr>
 
 </table>
@@ -7477,7 +7477,7 @@ In&nbsp;[26]:
 	<span class="k">print</span> <span class="s">&#39;suit combination #{}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">k</span><span class="p">)</span>
 	<span class="k">print</span> <span class="s">&#39;Hand A / Hand B = &#39;</span><span class="p">,</span> <span class="n">no_to_char</span><span class="p">(</span><span class="n">str_to_no</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span><span class="o">+</span><span class="s">&#39; - &#39;</span><span class="o">+</span><span class="n">no_to_char</span><span class="p">(</span><span class="n">str_to_no</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
 	<span class="k">print</span> <span class="s">&#39;frequency = {:5.3f} %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">100.0</span><span class="o">*</span><span class="n">freq</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
-    
+
 	<span class="n">fig</span><span class="o">=</span><span class="n">pl</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 	<span class="n">s</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s">&#39;bar&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&quot;#6495ED&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
 	<span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
@@ -7485,7 +7485,7 @@ In&nbsp;[26]:
 	<span class="n">pl</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 	<span class="n">pl</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-    
+
 </pre></div>
 
 </div>
@@ -8702,17 +8702,17 @@ In&nbsp;[61]:
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <div class="wrapper" style="height: 1200px; overflow: hidden; padding: 0; text-align: center; width: 850px;">
-<iframe scrolling="no" src="http://oscar6echo.github.io/Poker2/viz/two_preflop_hand/" 
+<iframe scrolling="no" src="http://oscar6echo.github.io/Poker2/viz/two_preflop_hand/"
 style="-moz-transform-origin: 0 0;
 -moz-transform: scale(1.0);
 -o-transform-origin: 0 0;
 -o-transform: scale(1.0);
 -webkit-transform-origin: 0 0;
 -webkit-transform: scale(1.0);
-border: 0px black solid; 
-height: 1200px; 
+border: 0px black solid;
+height: 1200px;
 overflow: hidden;
-width: 850px; 
+width: 850px;
 zoom: 1.0;">
 </iframe>
 </div>'
@@ -8823,17 +8823,17 @@ In&nbsp;[1]:
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <div class="wrapper" style="height: 1000px; overflow: hidden; padding: 0; text-align: center; width: 750px;">
-<iframe scrolling="no" src="http://oscar6echo.github.io/Poker2/viz/one_preflop_hand_montecarlo/" 
+<iframe scrolling="no" src="http://oscar6echo.github.io/Poker2/viz/one_preflop_hand_montecarlo/"
 style="-moz-transform-origin: 0 0;
 -moz-transform: scale(1.0);
 -o-transform-origin: 0 0;
 -o-transform: scale(1.0);
 -webkit-transform-origin: 0 0;
 -webkit-transform: scale(1.0);
-border: 0px black solid; 
-height: 1000px; 
+border: 0px black solid;
+height: 1000px;
 overflow: hidden;
-width: 750px; 
+width: 750px;
 zoom: 1.0;">
 </iframe>
 </div>'
@@ -8893,17 +8893,17 @@ In&nbsp;[2]:
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <div class="wrapper" style="height: 800px; overflow: hidden; padding: 0; text-align: center; width: 750px;">
-<iframe scrolling="no" src="http://oscar6echo.github.io/Poker2/viz/game/" 
+<iframe scrolling="no" src="http://oscar6echo.github.io/Poker2/viz/game/"
 style="-moz-transform-origin: 0 0;
 -moz-transform: scale(1.0);
 -o-transform-origin: 0 0;
 -o-transform: scale(1.0);
 -webkit-transform-origin: 0 0;
 -webkit-transform: scale(1.0);
-border: 0px black solid; 
-height: 800px; 
+border: 0px black solid;
+height: 800px;
 overflow: hidden;
-width: 750px; 
+width: 750px;
 zoom: 1.0;">
 </iframe>
 </div>'
