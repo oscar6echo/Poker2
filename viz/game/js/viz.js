@@ -290,7 +290,7 @@ function init_variables() {
 function init_viz(){
 
 	// draw title
-	title.text("Hand Equity - Exhaustive Search");
+	title.text("Hand Equity Calculator");
 
 
 	// build table cards shuffle/reset buttons
@@ -1424,6 +1424,10 @@ function test_draw() {
 function exhaustive_mode() {
 	console.log("exhaustive_mode");
 	exhaustive = true;
+
+	equity = equity_zero(nb_player);
+
+	update_viz(nb_player);
 }
 
 
