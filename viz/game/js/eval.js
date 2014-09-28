@@ -495,7 +495,7 @@ function compute_equity_montecarlo(player_card, table_card, G) {
 	for(var c=0; c<DECK_SIZE; c++) {
 		overlap = 0;
 		u = 0;
-		while ((overlap==0) && (u<unavail_card.length)) {
+		while ((overlap===0) && (u<unavail_card.length)) {
 			if (c==unavail_card[u]) {
 				overlap = 1;
 			}
