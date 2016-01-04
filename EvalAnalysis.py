@@ -164,7 +164,7 @@ nb_occurence_formula_hand_seven = [
 	['High Card', r'\left(\binom{4}{1}^7-\binom{4}{1} \left(\binom{7}{5} \binom{3}{1}^2+\binom{7}{6} \binom{3}{1}+1\right)\right) (-7 \binom{5}{1}-2 \binom{6}{1}-8 \binom{6}{2}-2 \binom{7}{2}+\binom{13}{7}-8)'],
 	['All', r'\binom{52}{7}']
 	]
-
+	
 
 def create_df_hand_seven():
 	"""create summary dataframe for all seven card hands"""
