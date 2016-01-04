@@ -84,7 +84,7 @@ def compute_tables():
 				for c4 in range(0, c3):
 					for c5 in range(0, c4):
 						hand_key = flush_key_seven[c1]+flush_key_seven[c2]+flush_key_seven[c3]+flush_key_seven[c4]+flush_key_seven[c5]
-						flush_rank[hand_key] = EvalFive.get_five_rank_fast(np.array([[4*c1, 4*c2, 4*c3, 4*c4, 4*c5]]), keys.FLUSH_KEY_FIVE, keys.FACE_KEY_FIVE, keys.CARD_SUIT, keys.CARD_FACE, EvalFive.flush_rank, EvalFive.face_rank)[0]
+						flush_rank[hand_key] = EvalFive.get_five_rank_fast(np.array([[4*c1, 4*c2, 4*c3, 4*c4, 4*c5]], dtype=np.int32), keys.FLUSH_KEY_FIVE, keys.FACE_KEY_FIVE, keys.CARD_SUIT, keys.CARD_FACE, EvalFive.flush_rank, EvalFive.face_rank)[0]
 
 	# Flush Suit table
 	print 'start flush_suit'
@@ -217,7 +217,7 @@ def test():
 
 	print '-------- EvalSeven getSevenRank_ evaluators sample runs'
 	np.random.seed(99)
-	array_seven_cards = np.array([np.random.choice(keys.DECK_SIZE, 7, replace=False) for k in xrange(10)])
+	array_seven_cards = np.array([np.random.choice(keys.DECK_SIZE, 7, replace=False) for k in xrange(10)], dtype=np.int32)
 	print 'array_seven_cards=\n{}'.format(array_seven_cards)
 	seven_cards = array_seven_cards[0]
 	print 'seven_cards={}'.format(seven_cards)

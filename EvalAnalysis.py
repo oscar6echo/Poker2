@@ -238,6 +238,7 @@ def create_df_preflop_hand_distrib(save=False):
 		array_five_cards = all_n_cards_given_m_cards_fast(5, hand_no, N)
 		h1_cards = np.ones([N, 2], dtype=np.int32)*hand_no
 		h1_array_all_seven_cards = np.concatenate((h1_cards, array_five_cards), axis=1)
+		h1_array_all_seven_cards = np.array(h1_array_all_seven_cards, dtype=np.int32)
 		h1_rank7 = EvalSeven.get_seven_rank_fast(h1_array_all_seven_cards, keys.CARD_FLUSH_KEY, keys.CARD_FACE_KEY, keys.CARD_SUIT, keys.SUIT_MASK, keys.SUIT_BIT_SHIFT, EvalSeven.flush_rank, EvalSeven.face_rank, EvalSeven.flush_suit)
 		preflop_hand_rank_distrib[1+k, :] = np.bincount(h1_rank7)
 
