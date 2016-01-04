@@ -1,5 +1,5 @@
 """
-Texas Hold'em fast hand evaluator for 7 card hands
+Texas Hold'em fast hand evaluator for 7 card hands.
 """
 
 import numpy as np

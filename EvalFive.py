@@ -1,7 +1,7 @@
 """
 Texas Hold'em hand evaluators
-	a fast one for 5 cards
-	a slow one for 7 cards: It goes through the C(7, 5)=21 5-card possible hands
+	a fast one for 5 cards.
+	a slow one for 7 cards: It goes through the C(7, 5)=21 5-card possible hands.
 """
 
 import numpy as np
